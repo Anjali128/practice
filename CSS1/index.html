@@ -20,43 +20,21 @@
         }
     </style> -->
     <style>
-        /* inline css is highest seniority  */
-        /* internal CSS  
-        !important is the end color */
-        h1{
-            color: rgb(187, 32, 32);
-            font-size: 25px;
-        }
-        p{
-            color: blue !important;
-            font-weight: 100;
-        }
-        #first{
-            color: blue;
-        }
-        /*SENIORITY->  inline css > id selector > Element selector */
+      div{
+          height: 100px;
+          background-color: red;
+      }
+      /* span does not works in inline element  */
+      span{
+        height: 100px;
+        width: 300px;  
+        background-color: yellow;
+      }
 
     </style>
 </head>
 <body>
-    <h1>Heading one</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eos iusto voluptate corrupti, perferendis saepe. Nisi tempore facere et eum, placeat neque ut exercitationem in quibusdam atque amet quo autem.</p>
-    <!-- 1st preference is given to inline css -->
-    <h1 id="first">Heading one</h1>
-
-    <h1 style="color: blue;">Heading one</h1>
-    <!-- inline CSS -->
-    <p style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eos iusto voluptate corrupti, perferendis saepe. Nisi tempore facere et eum, placeat neque ut exercitationem in quibusdam atque amet quo autem.</p>
-    <!-- <div id="first" style="background-color: cyan;"> 
-        <ul>
-            <li>first</li>
-            <li>second</li>
-        </ul>
-    </div>
-    <div class="second">
-        second
-    </div>
-    <section class="red">red</section>
-    <h1>This is first CSS project</h1>-->
+    <div></div>
+    <span></span>
 </body>
 </html>
