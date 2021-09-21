@@ -19,11 +19,34 @@
             color: brown;
         }
     </style> -->
+    <style>
+        /* inline css is highest seniority  */
+        /* internal CSS  
+        !important is the end color */
+        h1{
+            color: rgb(187, 32, 32);
+            font-size: 25px;
+        }
+        p{
+            color: blue !important;
+            font-weight: 100;
+        }
+        #first{
+            color: blue;
+        }
+        /*SENIORITY->  inline css > id selector > Element selector */
+
+    </style>
 </head>
 <body>
-    <h1 style= "color: blue; font-size: 10px;">Heading one</h1>
-    <p style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sint enim veniam, accusamus ullam repellat saepe, molestiae recusandae commodi iusto harum praesentium reiciendis maiores nisi officiis deleniti corporis quis ad laudantium illum numquam quaerat ipsum? Provident deleniti recusandae fugiat consequatur, ut quas eveniet similique impedit, in quisquam nemo asperiores assumenda exercitationem nostrum vero fugit ipsum iusto, blanditiis hic accusamus cupiditate tenetur ipsa? Culpa dolor quibusdam quae odit veritatis quam excepturi veniam impedit voluptates ea, dicta, dolore voluptatem voluptate quaerat. Repudiandae reiciendis harum eos praesentium totam? Voluptatibus eius aliquid, sunt molestiae, animi ex officia iusto quod temporibus iure quibusdam. Consectetur, odit!</p>
-    
+    <h1>Heading one</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eos iusto voluptate corrupti, perferendis saepe. Nisi tempore facere et eum, placeat neque ut exercitationem in quibusdam atque amet quo autem.</p>
+    <!-- 1st preference is given to inline css -->
+    <h1 id="first">Heading one</h1>
+
+    <h1 style="color: blue;">Heading one</h1>
+    <!-- inline CSS -->
+    <p style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eos iusto voluptate corrupti, perferendis saepe. Nisi tempore facere et eum, placeat neque ut exercitationem in quibusdam atque amet quo autem.</p>
     <!-- <div id="first" style="background-color: cyan;"> 
         <ul>
             <li>first</li>
@@ -34,6 +57,6 @@
         second
     </div>
     <section class="red">red</section>
-    <h1>This is first CSS project</h1> -->
+    <h1>This is first CSS project</h1>-->
 </body>
 </html>
